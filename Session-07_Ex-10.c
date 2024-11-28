@@ -18,7 +18,6 @@ int main(){
         for (int j = 2; j * j <= arr[i]; j++) {
             if (arr[i] % j == 0) {
                 prime = 0;
-                break;
             }
         }
         if (prime) {
