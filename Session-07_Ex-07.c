@@ -1,24 +1,20 @@
 #include<stdio.h>
 int main(){
     int n;
-    int check = 0;
     printf("Nhap so phan tu cua mang : ");
     scanf("%d",&n);
     int arr[n];
+    printf("Chi nhap so le\n");
     for (int i = 0; i < 5; i++)
     {
         do
         {
-            check = 0;
             printf("Nhap arr[%d] = ",i);
             scanf("%d", &arr[i]);
+            if (arr[i] % 2 == 0)
+            {
+                printf("Chi nhap so le, Nhap lai!!\n");
+            }
         } while (arr[i] % 2 == 0);
-        check++;
-        if (check != 0)
-        {
-            printf("\nok\n");
-        }
-        
     }
-    
 }
