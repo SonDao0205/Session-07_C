@@ -6,6 +6,7 @@ int main(){
     printf("Nhap cot n : ");
     scanf("%d", &n);
     int arr[m][n];
+    int sum = 0;
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
@@ -14,24 +15,29 @@ int main(){
             scanf("%d",&arr[i][j]);
         }   
     }
-    printf("Bien tren : \n");
+    printf("Bien tren\n");
     for (int i = 0; i < n; i++)
     {
         printf("%d\t",arr[0][i]);
     }
-    printf("\nBien trai : \n");
-    for (int i = 0; i < m ; i++)
-    {
-        printf("%d\t",arr[i][0]);
-    }
-    printf("\nBien duoi : \n");
+    printf("\n");
+    printf("Bien duoi\n");
     for (int i = 0; i < n; i++)
     {
         printf("%d\t",arr[m-1][i]);
+        
     }
-    printf("\nBien phai : \n");
+    printf("\n");
+    printf("Bien trai\n");
     for (int i = 0; i < m; i++)
     {
-        printf("%d\t",arr[i][m]);
+        printf("%d\t",arr[i][0]);
     }
+    printf("\n");
+    printf("Bien phai\n");
+    for (int i = 0; i < m ; i++)
+    {
+        printf("%d\t",arr[i][n-1]);
+    }
+    printf("\n");
 }
