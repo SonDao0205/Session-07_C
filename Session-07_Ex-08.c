@@ -6,18 +6,19 @@ int main(){
     printf("Nhap so cot : ");
     scanf("%d", &n);
     int array[m][n];
-    for (int i = 0; i < (sizeof(array)/sizeof(int)); i++)
+    printf("Nhap phan tu vao cac mang : ");
+    for (int i = 0; i < m; i++)
     {
-        for (int j = 0; j < (sizeof(array[i])/sizeof(int)); j++)
+        for (int j = 0; j < n; j++)
         {
             printf("array[%d][%d] = ",i,j);
             scanf("%d",&array[i][j]);
         }   
     }
     printf("\nSo phan tu ban vua nhap la : \n");
-    for (int i = 0; i < (sizeof(array)/sizeof(int)); i++)
+    for (int i = 0; i < m; i++)
     {
-        for (int j = 0; j < (sizeof(array[i])/sizeof(int)); j++)
+        for (int j = 0; j < n; j++)
         {
             printf("array[%d][%d] = %d \n",i,j,array[i][j]);
         }   
