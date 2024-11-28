@@ -5,7 +5,7 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     printf("Chi nhap so le\n");
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < n; i++)
     {
         do
         {
